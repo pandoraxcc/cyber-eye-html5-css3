@@ -1,61 +1,340 @@
+/* Reset the default css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main styling */
+
 body {
-  background-color: #131414;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+h2 {
+  font-size: 40px;
+}
+p {
+  margin: 10px 0;
+}
+
+/* Unitility classes */
+.container {
+  padding: 0 20px;
+  max-width: 1100px;
+  overflow: auto;
+  margin: auto;
+}
+.first-word {
+  color: #ffc300;
+}
+
+.lead-p {
+  font-size: 20px;
+}
+.btn-light {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background-color: #581845;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-light:hover {
+  background-color: #ffc300;
+}
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background-color: #c70039;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ffc300;
+  color: #c70039;
+}
+
+.bg-dark {
+  background-color: #581845;
   color: white;
 }
-.navbar {
-  border-bottom: #212626 3px solid;
-  opacity: 0.8;
+.bg-dark:hover {
+  background-color: #900c3f;
 }
 
-.navbar-brand {
-  font-size: x-large;
-}
-
-#home-section {
-  background: url(../img/home-call-us-for-penetration.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 700px;
-}
-
-#home-section .dark-overlay {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 700px;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-#home-section .home-inner {
-  padding-top: 150px;
-}
-#home-section .fas {
-  background-color: rgb(8, 82, 30);
-  padding: 5px;
-  border-radius: 5px;
-}
-
-#services-section .fas,
-#virtual-ciso-section .fas,
-#contact-section .fas {
-  background-color: rgb(8, 82, 30);
-  padding: 5px;
+.bg-lighter-dark {
+  background-color: #900c3f;
   color: white;
-  border-radius: 5px;
 }
-
-#virtual-ciso-section,
-#contact-section img {
-  min-height: 300px;
-}
-
-.bg-footer-dark {
-  background-color: #131414;
-}
-
-.modal-body {
-  background-color: #131414;
+.bg-lighter-dark:hover {
+  background-color: #581845;
   color: white;
+}
+
+.bg-light {
+  background-color: #c70039;
+  color: white;
+}
+.bg-light:hover {
+  background-color: #581845;
+  color: white;
+}
+.clear {
+  clear: both;
+}
+.bg-about {
+  background-color: #900c3f;
+  color: white;
+}
+/* Nav bar */
+#navbar {
+  background-color: #581845;
+  color: white;
+  overflow: auto;
+}
+
+#navbar a {
+  color: white;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#navbar ul {
+  float: right;
+  list-style: none;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+#navbar ul li a:hover,
+#navbar ul li a.activated {
+  background-color: #c70039;
+}
+/* Footer */
+
+.bg-dark-footer {
+  background-color: #581845;
+  color: white;
+}
+/* Showcase styling */
+#showcase {
+  background: linear-gradient(0deg, rgba(36, 33, 35, 0.7), rgba(53, 3, 31, 0.7)),
+    url("../img/cybersecurity-company-home-header-3.jpg") no-repeat center
+      center/cover;
+  height: 600px;
+}
+#showcase .showcase-content,
+#showcase-about-page .showcase-content,
+#showcase-contact-page .showcase-content {
+  color: white;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1,
+#showcase-about-page .showcase-content h1,
+#showcase-contact-page .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p,
+#showcase-about-page .showcase-content p,
+#showcase-contact-page.showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.5em;
+}
+
+#showcase-about-page {
+  background: linear-gradient(0deg, rgba(36, 33, 35, 0.7), rgba(53, 3, 31, 0.7)),
+    url("../img/about-cybereye.jpg") no-repeat center center/cover;
+  height: 600px;
+}
+
+/* Home info */
+#home-info {
+  height: 400px;
+}
+
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url(../img/providing-the-best-service-cybersecurity-austin-3.jpg)
+    no-repeat center/cover;
+  min-height: 100%;
+}
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  padding: 30px 30px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#home-info .info-content p {
+  padding-bottom: 20px;
+}
+
+/* Sevice section */
+
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+#services .box i {
+  margin-bottom: 30px;
+  color: #ffc300;
+}
+
+/* Footer section */
+
+#main-footer {
+  text-align: center;
+  padding: 20px;
+}
+/* About Page */
+#about,
+#contact {
+  height: 400px;
+}
+
+#left-side {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 0 40px;
+  height: 100%;
+  overflow: hidden;
+}
+#left-side h1 {
+  font-size: 40px;
+  padding-top: 20px;
+}
+#about #right-side {
+  float: right;
+  background: url(../img/about-our-company-cybersecurity-company.jpg) no-repeat
+    center center/cover;
+  width: 50%;
+  min-height: 100%;
+}
+/* Testimonials section */
+#testimonials {
+  background: url(../img/testimonials-background-cybereye-2.jpg) no-repeat
+    center center/cover;
+  height: 800px;
+  color: white;
+}
+.avatar {
+  width: 20%;
+  float: left;
+  background: url(../img/tst-avatar-3.jpg) no-repeat;
+  height: 150px;
+  background-size: contain;
+}
+
+.container-review {
+  margin-top: 50px;
+  opacity: 0.9;
+}
+.review-h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+}
+
+.last-review {
+  margin-bottom: 50px;
+}
+
+/* Contact page */
+#contact {
+  height: 100%;
+}
+#showcase-contact-page {
+  background: linear-gradient(0deg, rgba(36, 33, 35, 0.7), rgba(53, 3, 31, 0.7)),
+    url("../img/contact-cybereye-company.jpg") no-repeat center center/cover;
+  height: 600px;
+}
+.contact-header {
+  margin-top: 20px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+#contact .form-group {
+  margin-bottom: 0px;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact textarea {
+  height: 60px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-width: 5px;
+  border-color: #ffc300;
+}
+
+.form-group label {
+  padding-top: 20px;
+}
+.form-group textarea {
+  margin-bottom: 20px;
+}
+
+.contact-spacer {
+  margin-bottom: 30px;
+}
+#contact #right-side-contact {
+  float: right;
+  width: 50%;
+  background: url("../img/contact-us-cybereye.jpg") no-repeat center
+    center/cover;
+  min-height: 485px;
 }
