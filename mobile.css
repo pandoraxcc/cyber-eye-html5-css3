@@ -1,0 +1,85 @@
+/* Navigation */
+#navbar h1 {
+  float: none;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#navbar ul,
+#navbar ul li {
+  float: none;
+  padding-bottom: 6px;
+}
+
+#navbar ul li a {
+  padding: 10px 0px;
+}
+
+/* Hero section */
+
+#showcase .showcase-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#showcase {
+  height: 100%;
+}
+
+/* Home page */
+#home-info {
+  height: auto;
+}
+
+#home-info .info-img {
+  display: none;
+}
+
+#home-info .info-content {
+  float: none;
+  width: 100%;
+  height: auto;
+  line-height: 2.7rem;
+}
+
+.box {
+  float: none;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+
+/* About page */
+
+#about #right-side {
+  display: none;
+  float: none;
+}
+
+#about #left-side {
+  float: none;
+  width: 100%;
+  height: auto;
+  padding: 40px 20px;
+}
+
+#about {
+  height: 400px;
+}
+
+/* Contact Page */
+#contact {
+  height: 100%;
+}
+#left-side-contact {
+  float: none;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  height: 100%;
+  overflow: hidden;
+  line-height: 2.7rem;
+}
+#right-side-contact {
+  display: none;
+}
